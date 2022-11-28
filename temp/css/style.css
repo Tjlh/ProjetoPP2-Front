@@ -82,14 +82,18 @@ body {
 
 .produto{
     display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
     max-width: 500px;
-    height: 150px;
+    height: auto;
     background-color: gray;
+    margin: 0 80px;
 }
 
 img{
-    width: 365px;
-    height: 225px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 .produto:hover{
     background-color: wheat;
@@ -111,8 +115,15 @@ img{
     font: bold 14px Arial;
     color: gray;
 }
+.nome-prod{
+    font: bold 16px Arial;
+}
+.preco-prod{
+    font: bold 16px Arial;
+    color: rgba(0, 255, 0);
+}
 
-@media (max-width: 768px){
+@media (max-width: 500px){
     
     .div-produto {
         display: grid;
@@ -124,5 +135,19 @@ img{
         grid-template-columns: auto;
         border: solid 1px black;
         border-radius: 5px;
+    }
+    .produto{
+
+        grid-template-columns: auto;
+        max-width: 100%;
+        height: auto;
+        background-color: gray;
+        margin: 0 80px;
+    }
+    img{
+        width: 200px;
+        margin: auto;
+        max-width: 200px;
+        height: auto;
     }
 }
