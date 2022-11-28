@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header class="container-left">
+        <div class="fixed-top">
+            <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                <div class="container-fluid">
+                    <h1><a class="navbar-brand" href="#">Cantina Cardápio</a></h1>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbarsExample01">
+                        <ul class="navbar-nav me-auto mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/meusPedidos.html">Meus Pedidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/minhaConta.html">Minha Conta</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="container-left">
+                <div class="nav-scroller bg-body">
+                    <nav class="nav">
+                        <a class="nav-link" href="#produto1">Tipo de Produto 1</a>
+                        <a class="nav-link" href="#produto2">Tipo de Produto 2</a>
+                        <a class="nav-link" href="#produto3">Tipo de Produto 3</a>
+                        <a class="nav-link" href="#produto4">Tipo de Produto 4</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <form>
+            <input class="form-control" type="search" placeholder="Procurar produto" aria-label="Search">
+        </form>
+        <br>
+        <div id="produto1">
+            <!--
+            <h1>Coxinhas1</h1>
+            <div class="div-produto">
+                <a class="produtos" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="nome-prod"></div>
+                    <div class="imagem-prod">
+
+                    </div>
+                    <div class="preco-prod"></div>
+                </a>
+            </div>
+        -->
+        </div>
+        <h1>Coxinhas1</h1>
+        <div class="div-produto">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="imagem-prod">
+                        <img
+                            src="https://www.cakedesignexpo.com.br/wp-content/uploads/2022/05/Receita-Coxinha-Massa-de-Mandioca-Facil-e-Saborosa-Como-Fazer.jpg">
+                    </div>
+                    </svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="imagem-prod">
+                        <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/10/coxinha-queijos.jpg">
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <br>
+    <footer class="rodape">
+        Desenvolvimento por <a class="link" href="https://theuselessweb.com" target="_blank">IFPE Enterprise</a> &copy;
+    </footer>
+    <!-- Modal produtos-->
+    <div class="modal fade" id="coxFrango" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Observações:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
